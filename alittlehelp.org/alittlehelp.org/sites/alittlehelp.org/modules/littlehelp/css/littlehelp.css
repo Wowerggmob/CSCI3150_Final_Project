@@ -1,0 +1,79 @@
+.wfsc-renewal-portal {}
+
+.wfsc-renewal-portal span {
+    float: left;
+    margin-right: 15px;
+}
+
+.wfsc-renewal-portal textarea#wfsb-news-txt {
+    color: #cccccc;
+    font-size: 13px;
+}
+
+.wfsc-renewal-portal #wfsb-directory-btn {
+    background: #1c878c none repeat scroll 0 0;
+    border-radius: 15px;
+    border-top: 1px solid #79a35c;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 1);
+    color: #ffffff;
+    float: left;
+    font-weight: bold;
+    margin-right: 50px;
+    padding: 9px;
+    text-align: center;
+    vertical-align: middle;
+    width: 190px;
+}
+
+.renew-now {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top, #ba3225, #99251c) repeat scroll 0 0;
+    border-radius: 14px;
+    border-top: 1px solid #ba3225;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 1);
+    color: white;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
+    width: 47%;
+    margin: 0 45px;
+}
+
+a.renew-now,
+a.group-btn {
+    color: #ffffff !important;
+}
+
+#edit-name-wrapper {
+    width: 175px;
+}
+
+#edit-name-1,
+#edit-name-2 {
+    width: 200px;
+}
+
+.views-exposed-form .form-type-select {
+    min-height: 150px;
+}
+
+.view-id-carousel p {
+    font-size: 16px !important;
+}
+
+.page-portal-volunteer-opportunities .view-volunteer-opportunities,
+.page-portal-volunteer-opportunities-2 .view-volunteer-opportunities {
+    margin-left: -200px;
+}
+
+.location-col {
+    min-width: 180px;
+}
+
+.hidden-field {
+    display: none;
+}

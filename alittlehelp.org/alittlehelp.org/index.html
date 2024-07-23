@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+
+<!--[if IE 8 ]><html lang="en" dir="ltr"  class="no-js ie ie8 lt-ie9"><![endif]-->
+<!--[if IE 9 ]><html lang="en" dir="ltr"  class="no-js ie ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" dir="ltr" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+    <link rel="shortcut icon" href="https://alittlehelp.org/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <!--[if lte IE 8]>
+		<div style=' text-align:center; clear: both; padding:0 0 0 15px; position: relative;'>
+			<a href="//windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+				<img src="//storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.">
+			</a>
+		</div>
+	<![endif]-->
+
+    <title>A Little Help</title>
+
+    <style type="text/css" media="all">
+        @import url("https://alittlehelp.org/modules/system/system.base.css?sgshvu");
+        @import url("https://alittlehelp.org/modules/system/system.menus.css?sgshvu");
+        @import url("https://alittlehelp.org/modules/system/system.messages.css?sgshvu");
+        @import url("https://alittlehelp.org/modules/system/system.theme.css?sgshvu");
+    </style>
+    <style type="text/css" media="screen">
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/tipsy/stylesheets/tipsy.css?sgshvu");
+    </style>
+    <style type="text/css" media="all">
+        @import url("https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.resizable.min.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.dialog.min.css?sgshvu");
+    </style>
+    <style type="text/css" media="all">
+        @import url("https://alittlehelp.org/sites/all/modules/date/date_api/date.css?sgshvu");
+        @import url("https://alittlehelp.org/modules/field/theme/field.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/littlehelp/css/littlehelp.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/logintoboggan/logintoboggan.css?sgshvu");
+        @import url("https://alittlehelp.org/modules/node/node.css?sgshvu");
+        @import url("https://alittlehelp.org/modules/search/search.css?sgshvu");
+        @import url("https://alittlehelp.org/modules/user/user.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/all/modules/views/css/views.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/tm_lazyload/css/tm_lazyload.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/all/modules/ckeditor/css/ckeditor.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/all/modules/media/modules/media_wysiwyg/css/media_wysiwyg.base.css?sgshvu");
+    </style>
+    <style type="text/css" media="all">
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/cctags/cctags.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/all/libraries/colorbox/example1/colorbox.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/all/modules/ctools/css/ctools.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/panels/css/panels.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/tm_animate/css/animate.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/tm_font_awesome/css/font-awesome.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/uif/uif.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/panels/plugins/layouts/flexible/flexible.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/default/files/ctools/css/3583807722d0d479b2d744af3d8922b0.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/flexslider/assets/css/flexslider_img.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/libraries/flexslider/flexslider.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/dismiss/css/dismiss.base.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/responsive_menus/styles/responsive_menus_simple/css/responsive_menus_simple.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/all/modules/civicrm/css/crm-i.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/all/modules/civicrm/css/civicrm.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/modules/tm_follow/css/tm_follow.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/libraries/superfish/css/superfish.css?sgshvu");
+    </style>
+    <style type="text/css" media="screen">
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/css/boilerplate.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/themes/cividesk_theme956/css/style.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/css/maintenance-page.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/css/skeleton.css?sgshvu");
+        @import url("https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/css/custom.css?sgshvu");
+    </style>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/modules/jquery_update/replace/jquery/1.12/jquery.min.js?v=1.12.4"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/misc/jquery-extend-3.4.0.js?v=1.12.4"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.12.4"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/misc/jquery.once.js?v=1.2"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/misc/drupal.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/modules/tipsy/javascripts/jquery.tipsy.js?v=0.1.7"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/modules/tipsy/javascripts/tipsy.js?v=0.1.7"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/modules/jquery_update/js/jquery_browser.js?v=0.0.1"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js?v=1.10.2"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js?v=1.10.2"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js?v=1.10.2"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.position.min.js?v=1.10.2"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/misc/ui/jquery.ui.position-1.13.0-backport.js?v=1.10.2"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.resizable.min.js?v=1.10.2"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.dialog.min.js?v=1.10.2"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/misc/ui/jquery.ui.dialog-1.13.0-backport.js?v=1.10.2"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/modules/littlehelp/js/littlehelp.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/modules/tm_lazyload/js/jquery.lazyloader.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/libraries/colorbox/jquery.colorbox-min.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/modules/colorbox/js/colorbox.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/modules/tm_animate/js/wow.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/libraries/flexslider/jquery.flexslider-min.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/modules/responsive_menus/styles/responsive_menus_simple/js/responsive_menus_simple.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/modules/google_analytics/googleanalytics.js?sgshvu"></script>
+    <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=AW-10967629039"></script>
+    <script type="text/javascript">
+        //<!--//--><![CDATA[//><!--
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments)
+        };
+        gtag("js", new Date());
+        gtag("set", "developer_id.dMDhkMT", true);
+        gtag("config", "AW-10967629039", {
+            "groups": "default",
+            "anonymize_ip": true
+        });
+        gtag("config", "G-CMN1BQBG00", {
+            "groups": "default",
+            "anonymize_ip": true
+        });
+        //--><!]]>
+    </script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/modules/olark/olark.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/libraries/superfish/sftouchscreen.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/libraries/superfish/superfish.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/libraries/easing/jquery.easing.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/all/libraries/superfish/supersubs.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/modules/superfish/superfish.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/theme956.core.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/jquery.debouncedresize.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/jquery.mobilemenu.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/jquery.easing.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/jquery.ui.totop.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/jquery.cookie.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/tm-stick-up.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/tformer.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/device.min.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/jquery.mousewheel.min.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/jquery.simplr.smoothscroll.min.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/migrate.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/theme956/js/tm-parallax.js?sgshvu"></script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/themes/cividesk_theme956/js/cividesk_theme956.js?sgshvu"></script>
+    <script type="text/javascript">
+        //<!--//--><![CDATA[//><!--
+        jQuery.extend(Drupal.settings, {
+            "basePath": "\/",
+            "pathPrefix": "",
+            "setHasJsCookie": 0,
+            "ajaxPageState": {
+                "theme": "cividesk_theme956",
+                "theme_token": "XjxFXg3ywYdZfUa-oj8sVKTEj1QNkkF1Fw5w0K59flI",
+                "js": {
+                    "0": 1,
+                    "sites\/alittlehelp.org\/modules\/flexslider\/assets\/js\/flexslider.load.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/jquery\/1.12\/jquery.min.js": 1,
+                    "misc\/jquery-extend-3.4.0.js": 1,
+                    "misc\/jquery-html-prefilter-3.5.0-backport.js": 1,
+                    "misc\/jquery.once.js": 1,
+                    "misc\/drupal.js": 1,
+                    "sites\/alittlehelp.org\/modules\/tipsy\/javascripts\/jquery.tipsy.js": 1,
+                    "sites\/alittlehelp.org\/modules\/tipsy\/javascripts\/tipsy.js": 1,
+                    "sites\/all\/modules\/jquery_update\/js\/jquery_browser.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js": 1,
+                    "misc\/ui\/jquery.ui.position-1.13.0-backport.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.resizable.min.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.dialog.min.js": 1,
+                    "misc\/ui\/jquery.ui.dialog-1.13.0-backport.js": 1,
+                    "sites\/alittlehelp.org\/modules\/littlehelp\/js\/littlehelp.js": 1,
+                    "sites\/alittlehelp.org\/modules\/tm_lazyload\/js\/jquery.lazyloader.js": 1,
+                    "sites\/alittlehelp.org\/libraries\/colorbox\/jquery.colorbox-min.js": 1,
+                    "sites\/alittlehelp.org\/modules\/colorbox\/js\/colorbox.js": 1,
+                    "sites\/alittlehelp.org\/modules\/tm_animate\/js\/wow.js": 1,
+                    "sites\/alittlehelp.org\/libraries\/flexslider\/jquery.flexslider-min.js": 1,
+                    "sites\/alittlehelp.org\/modules\/responsive_menus\/styles\/responsive_menus_simple\/js\/responsive_menus_simple.js": 1,
+                    "sites\/all\/modules\/google_analytics\/googleanalytics.js": 1,
+                    "https:\/\/www.googletagmanager.com\/gtag\/js?id=AW-10967629039": 1,
+                    "1": 1,
+                    "sites\/alittlehelp.org\/modules\/olark\/olark.js": 1,
+                    "sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js": 1,
+                    "sites\/all\/libraries\/superfish\/sftouchscreen.js": 1,
+                    "sites\/all\/libraries\/superfish\/superfish.js": 1,
+                    "sites\/alittlehelp.org\/libraries\/easing\/jquery.easing.js": 1,
+                    "sites\/all\/libraries\/superfish\/supersubs.js": 1,
+                    "sites\/alittlehelp.org\/modules\/superfish\/superfish.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/theme956.core.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/jquery.debouncedresize.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/jquery.mobilemenu.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/jquery.easing.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/jquery.ui.totop.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/jquery.cookie.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/tm-stick-up.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/tformer.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/device.min.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/jquery.mousewheel.min.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/jquery.simplr.smoothscroll.min.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/migrate.js": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/js\/tm-parallax.js": 1,
+                    "sites\/alittlehelp.org\/themes\/cividesk_theme956\/js\/cividesk_theme956.js": 1
+                },
+                "css": {
+                    "modules\/system\/system.base.css": 1,
+                    "modules\/system\/system.menus.css": 1,
+                    "modules\/system\/system.messages.css": 1,
+                    "modules\/system\/system.theme.css": 1,
+                    "sites\/alittlehelp.org\/modules\/tipsy\/stylesheets\/tipsy.css": 1,
+                    "misc\/ui\/jquery.ui.core.css": 1,
+                    "misc\/ui\/jquery.ui.theme.css": 1,
+                    "misc\/ui\/jquery.ui.button.css": 1,
+                    "misc\/ui\/jquery.ui.resizable.css": 1,
+                    "misc\/ui\/jquery.ui.dialog.css": 1,
+                    "sites\/all\/modules\/date\/date_api\/date.css": 1,
+                    "modules\/field\/theme\/field.css": 1,
+                    "sites\/alittlehelp.org\/modules\/littlehelp\/css\/littlehelp.css": 1,
+                    "sites\/alittlehelp.org\/modules\/logintoboggan\/logintoboggan.css": 1,
+                    "modules\/node\/node.css": 1,
+                    "modules\/search\/search.css": 1,
+                    "modules\/user\/user.css": 1,
+                    "sites\/all\/modules\/views\/css\/views.css": 1,
+                    "sites\/alittlehelp.org\/modules\/tm_lazyload\/css\/tm_lazyload.css": 1,
+                    "sites\/all\/modules\/ckeditor\/css\/ckeditor.css": 1,
+                    "sites\/all\/modules\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css": 1,
+                    "sites\/alittlehelp.org\/modules\/cctags\/cctags.css": 1,
+                    "sites\/all\/libraries\/colorbox\/example1\/colorbox.css": 1,
+                    "sites\/all\/modules\/ctools\/css\/ctools.css": 1,
+                    "sites\/alittlehelp.org\/modules\/panels\/css\/panels.css": 1,
+                    "sites\/alittlehelp.org\/modules\/tm_animate\/css\/animate.css": 1,
+                    "sites\/alittlehelp.org\/modules\/tm_font_awesome\/css\/font-awesome.css": 1,
+                    "sites\/alittlehelp.org\/modules\/uif\/uif.css": 1,
+                    "sites\/alittlehelp.org\/modules\/panels\/plugins\/layouts\/flexible\/flexible.css": 1,
+                    "public:\/\/ctools\/css\/3583807722d0d479b2d744af3d8922b0.css": 1,
+                    "sites\/alittlehelp.org\/modules\/flexslider\/assets\/css\/flexslider_img.css": 1,
+                    "sites\/alittlehelp.org\/libraries\/flexslider\/flexslider.css": 1,
+                    "sites\/alittlehelp.org\/modules\/dismiss\/css\/dismiss.base.css": 1,
+                    "sites\/alittlehelp.org\/modules\/responsive_menus\/styles\/responsive_menus_simple\/css\/responsive_menus_simple.css": 1,
+                    "sites\/all\/modules\/civicrm\/css\/crm-i.css": 1,
+                    "sites\/all\/modules\/civicrm\/css\/civicrm.css": 1,
+                    "sites\/alittlehelp.org\/modules\/tm_follow\/css\/tm_follow.css": 1,
+                    "sites\/alittlehelp.org\/libraries\/superfish\/css\/superfish.css": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/css\/boilerplate.css": 1,
+                    "sites\/alittlehelp.org\/themes\/cividesk_theme956\/css\/style.css": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/css\/maintenance-page.css": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/css\/skeleton.css": 1,
+                    "sites\/alittlehelp.org\/themes\/theme956\/css\/custom.css": 1
+                }
+            },
+            "colorbox": {
+                "opacity": "0.85",
+                "current": "{current} of {total}",
+                "previous": "\u00ab Prev",
+                "next": "Next \u00bb",
+                "close": "Close",
+                "maxWidth": "98%",
+                "maxHeight": "98%",
+                "fixed": true,
+                "mobiledetect": true,
+                "mobiledevicewidth": "960px",
+                "file_public_path": "\/sites\/default\/files",
+                "specificPagesDefaultValue": "admin*\nimagebrowser*\nimg_assist*\nimce*\nnode\/add\/*\nnode\/*\/edit\nprint\/*\nprintpdf\/*\nsystem\/ajax\nsystem\/ajax\/*"
+            },
+            "tipsy": {
+                "custom_selectors": [{
+                    "selector": ".tipsy",
+                    "options": {
+                        "fade": 1,
+                        "gravity": "w",
+                        "trigger": "hover",
+                        "delayIn": "0",
+                        "delayOut": "0",
+                        "opacity": "0.8",
+                        "offset": "0",
+                        "html": 0,
+                        "tooltip_content": {
+                            "source": "attribute",
+                            "selector": "title"
+                        }
+                    }
+                }]
+            },
+            "flexslider": {
+                "optionsets": {
+                    "default": {
+                        "namespace": "flex-",
+                        "selector": ".slides \u003E li",
+                        "easing": "swing",
+                        "direction": "horizontal",
+                        "reverse": false,
+                        "smoothHeight": false,
+                        "startAt": 0,
+                        "animationSpeed": 600,
+                        "initDelay": 0,
+                        "useCSS": true,
+                        "touch": true,
+                        "video": false,
+                        "keyboard": true,
+                        "multipleKeyboard": false,
+                        "mousewheel": 0,
+                        "controlsContainer": ".flex-control-nav-container",
+                        "sync": "",
+                        "asNavFor": "",
+                        "itemWidth": 0,
+                        "itemMargin": 0,
+                        "minItems": 0,
+                        "maxItems": 0,
+                        "move": 0,
+                        "animation": "fade",
+                        "slideshow": true,
+                        "slideshowSpeed": "7000",
+                        "directionNav": true,
+                        "controlNav": false,
+                        "prevText": "",
+                        "nextText": "",
+                        "pausePlay": false,
+                        "pauseText": "Pause",
+                        "playText": "Play",
+                        "randomize": false,
+                        "thumbCaptions": false,
+                        "thumbCaptionsBoth": false,
+                        "animationLoop": true,
+                        "pauseOnAction": true,
+                        "pauseOnHover": false,
+                        "manualControls": ""
+                    }
+                },
+                "instances": {
+                    "flexslider-1": "default"
+                }
+            },
+            "better_exposed_filters": {
+                "views": {
+                    "slider": {
+                        "displays": {
+                            "block": {
+                                "filters": []
+                            }
+                        }
+                    },
+                    "carousel": {
+                        "displays": {
+                            "block": {
+                                "filters": []
+                            }
+                        }
+                    }
+                }
+            },
+            "responsive_menus": [{
+                "toggler_text": "\u2630 Menu",
+                "selectors": ["#main-menu", ".sf-main-menu"],
+                "media_size": "768",
+                "media_unit": "px",
+                "absolute": "1",
+                "remove_attributes": "1",
+                "responsive_menus_style": "responsive_menus_simple"
+            }],
+            "googleanalytics": {
+                "account": ["AW-10967629039", "G-CMN1BQBG00"],
+                "trackOutbound": 1,
+                "trackMailto": 1,
+                "trackDownload": 1,
+                "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip",
+                "trackColorbox": 1
+            },
+            "olark": {
+                "disable_ios": 1,
+                "enabled": 1
+            },
+            "superfish": {
+                "1": {
+                    "id": "1",
+                    "sf": {
+                        "animation": {
+                            "opacity": "show",
+                            "height": ["show", "easeOutCubic"]
+                        },
+                        "speed": "\u0027fast\u0027",
+                        "autoArrows": true,
+                        "dropShadows": false,
+                        "disableHI": false
+                    },
+                    "plugins": {
+                        "touchscreen": {
+                            "mode": "useragent_custom",
+                            "useragent": "iphone|android|ipad"
+                        },
+                        "supposition": false,
+                        "bgiframe": false,
+                        "supersubs": {
+                            "minWidth": "12",
+                            "maxWidth": "27",
+                            "extraWidth": 1
+                        }
+                    }
+                }
+            }
+        });
+        //--><!]]>
+    </script>
+
+    <!--[if LT IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <script>
+        if (jQuery.cookie('the_cookie') != 0) {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">')
+        } else {
+            document.write('<meta name="viewport" content="width=device-width">')
+        }
+    </script>
+
+    <link rel="stylesheet" href="/sites/alittlehelp.org/themes/theme956/css/style-mobile.css" media="screen" id="style-mobile">
+    <link rel="stylesheet" href="/sites/alittlehelp.org/themes/theme956/css/skeleton-mobile.css" media="screen" id="skeleton-mobile">
+</head>
+
+<body id="body" class="html front not-logged-in no-sidebars page-home with-navigation with-subnav">
+
+
+
+    <a href="#main-menu" class="element-invisible element-focusable">Skip to navigation</a>
+    <a href="#content" class="element-invisible element-focusable">Skip to main content</a>
+
+
+    <div id="page-wrapper" class="page-wrapper">
+        <div id="page" class="page">
+
+            <!-- Header
+		======================================================================================= -->
+            <header id="header" class="header page-header clearfix" role="banner">
+                <!-- Region Header Top -->
+
+                <div class="stickup header-section-1">
+                    <!-- Sticky menu wrapper -->
+                    <div class="container-12">
+                        <div class="grid-12">
+                            <div class="col1">
+                                <!-- Logo -->
+                                <div id="logo" class="logo">
+                                    <a href="/" title="Home" rel="home" id="img-logo" class="img-logo"> 
+											<img src="https://alittlehelp.org/sites/default/files/logo.png" alt="Home">
+										</a>
+                                </div>
+                                <!-- /#name-and-slogan -->
+                            </div>
+
+                            <div class="col2">
+                                <!-- Region Menu -->
+                                <div class="region region-menu">
+
+                                    <div id="block-block-15" class="block-block-15 block block-block block-odd">
+                                        <!-- Block title -->
+
+                                        <!-- Block content -->
+                                        <div class="content block-content">
+                                            <div class="above-menu-block">
+                                                <div class="calendar-link">
+                                                    <a href="/civicrm/showevents?id=1">calendar</a>
+                                                </div>
+                                                <!-- Colorado Gives day donate button
+    <div style="display:inline;">
+       <a href="https://www.coloradogives.org/organization/alittlehelp" target="_blank"><img style="margin-top:-12px;" src="/sites/alittlehelp.civisite.com/files/CGD2023_small.png" /></a>
+    </div>-->
+                                                <!-- Default donate button -->
+                                                <div class="donate-link btn">
+                                                    <a href="/donate" target="_blank">donate</a>
+                                                </div>
+                                                <div class="portal-link">
+                                                    <a href="/user/login">Login</a>
+                                                </div>
+                                            </div>
+
+                                            <style>
+                                                .above-menu-block {
+                                                    width: 100%;
+                                                    text-align: right;
+                                                    padding: 0 0 20px;
+                                                }
+
+                                                .above-menu-block .calendar-link,
+                                                .portal-link {
+                                                    background: none;
+                                                    border: 0;
+                                                    font: 14px 'Verdana', sans-serif;
+                                                    margin: 0;
+                                                    overflow: inherit;
+                                                    padding: 0;
+                                                    text-transform: lowercase;
+                                                    display: inline-block;
+                                                }
+
+                                                .above-menu-block .calendar-link a,
+                                                .portal-link a {
+                                                    position: relative;
+                                                    border-radius: 7px;
+                                                    color: #020202;
+                                                    padding: 10px 19px 12px;
+                                                    text-decoration: none;
+                                                    font-size: 14px;
+                                                }
+
+                                                .above-menu-block .calendar-link a:hover,
+                                                .portal-link a:hover {
+                                                    background: #00aff2;
+                                                    color: #fff;
+                                                    text-decoration: none;
+                                                    box-shadow: 0 3px 0 0 #039ad4;
+                                                }
+
+                                                .above-menu-block .btn {
+                                                    display: inline-block;
+                                                }
+                                            </style>
+                                        </div>
+                                    </div>
+                                    <div id="block-superfish-1" class="block-superfish-1 block block-superfish block-even">
+                                        <!-- Block title -->
+
+                                        <!-- Block content -->
+                                        <div class="content block-content">
+                                            <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-7 sf-parent-items-3 sf-single-items-4">
+                                                <li id="menu-7745-1" class="first odd sf-item-1 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="/AboutUs" class="sf-depth-1 menuparent">About Us</a>
+                                                    <ul>
+                                                        <li id="menu-7746-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/AboutUs/History" class="sf-depth-2">History</a></li>
+                                                        <li id="menu-9883-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/how-we-help/partnerships" class="sf-depth-2">Partnerships</a></li>
+                                                        <li id="menu-9512-1" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="/AboutUs/News" class="sf-depth-2">News</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu-9612-1" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="/how-we-help" class="sf-depth-1">How We Help</a></li>
+                                                <li id="menu-10075-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent"><a href="/supportus" class="sf-depth-1 menuparent">Support Us</a>
+                                                    <ul>
+                                                        <li id="menu-7727-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/ColoradoGivesDay" class="sf-depth-2">Colorado Gives Day</a></li>
+                                                        <li id="menu-10077-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/volunteer" title="" class="sf-depth-2">Volunteer</a></li>
+                                                        <li id="menu-10078-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/donations" class="sf-depth-2">Donate</a></li>
+                                                        <li id="menu-7824-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/Partnerships" class="sf-depth-2">Partner</a></li>
+                                                        <li id="menu-9635-1" class="last odd sf-item-5 sf-depth-2 sf-no-children"><a href="/Intern" class="sf-depth-2">Intern</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu-7421-1" class="middle even sf-item-4 sf-depth-1 sf-total-children-6 sf-parent-children-1 sf-single-children-5 menuparent"><a href="/EventsPrograms" class="sf-depth-1 menuparent">Events &amp; Programs</a>
+                                                    <ul>
+                                                        <li id="menu-7838-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/ServiceSaturdays" class="sf-depth-2">Service Saturdays!</a></li>
+                                                        <li id="menu-9261-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/groupprojects" class="sf-depth-2">Ditch the Desk</a></li>
+                                                        <li id="menu-10257-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/gatherings" class="sf-depth-2">Summer Picnics</a></li>
+                                                        <li id="menu-9262-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/LittleTalks" class="sf-depth-2">Virtual Programs</a></li>
+                                                        <li id="menu-9621-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/volunteerchats" class="sf-depth-2">Volunteer Chats</a></li>
+                                                        <li id="menu-9513-1" class="last even sf-item-6 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent"><a href="/Events" class="sf-depth-2 menuparent">Fundraising Events</a>
+                                                            <ul>
+                                                                <li id="menu-10258-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/PickleBash" class="sf-depth-3">PickleBash</a></li>
+                                                                <li id="menu-10260-1" class="last even sf-item-2 sf-depth-3 sf-no-children"><a href="/events/bigbashnoco" class="sf-depth-3">The Big Bash of Blues</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu-9885-1" class="middle odd sf-item-5 sf-depth-1 sf-no-children"><a href="/ReceiveHelp" title="" class="sf-depth-1">Receive Help</a></li>
+                                                <li id="menu-10080-1" class="middle even sf-item-6 sf-depth-1 sf-no-children"><a href="/volunteer-application" class="sf-depth-1">Volunteer</a></li>
+                                                <li id="menu-8920-1" class="last odd sf-item-7 sf-depth-1 sf-no-children"><a href="/ContactUs" class="sf-depth-1">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Region Header -->
+                <div id="header_wrapper" class="header_wrapper region-fullwidth">
+                    <div class="region region-header">
+
+                        <div id="block-views-slider-block" class="block-views-slider-block block block-views block-odd">
+                            <!-- Block title -->
+
+                            <!-- Block content -->
+                            <div class="content block-content">
+                                <div class="view view-slider view-id-slider view-display-id-block view-dom-id-b4aa9007fce89ea1529c7d999aaebd4a">
+
+
+
+                                    <div class="view-content">
+                                        <div id="flexslider-1" class="flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <div class="views-field views-field-field-slide-image">
+                                                        <div class="field-content"><a href="/how-we-help/volunteers"><img src="https://alittlehelp.org/sites/default/files/styles/flexslider_full/public/2_ALH_Volunteer-Day1_0.jpg?itok=9ajq8gJ-" width="2050" height="900" alt="" /></a></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="views-field views-field-field-slide-image">
+                                                        <div class="field-content"><a href="/ReceiveHelp"><img src="https://alittlehelp.org/sites/default/files/styles/flexslider_full/public/8_ALH_Need-ALH.jpg?itok=93_f0SJ6" width="2050" height="900" alt="" /></a></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="views-field views-field-field-slide-image">
+                                                        <div class="field-content"><a href="/civicrm/contribute/transact?cid=0&amp;reset=1&amp;id=8"><img src="https://alittlehelp.org/sites/default/files/styles/flexslider_full/public/5_ALH_Fundraiser.jpg?itok=wEvIkEVK" width="2050" height="900" alt="" /></a></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="views-field views-field-field-slide-image">
+                                                        <div class="field-content"><a href="/ServiceSaturdays"><img src="https://alittlehelp.org/sites/default/files/styles/flexslider_full/public/4_ALH_Service-Saturday.jpg?itok=aoC3jmC4" width="2050" height="900" alt="" /></a></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Region Header bottom -->
+            </header>
+
+            <!-- Content
+		======================================================================================= -->
+            <div id="main-wrapper" class="main-wrapper" role="main">
+                <!-- Region content top -->
+
+                <div class="container-12">
+                    <div class="grid-12">
+                        <div id="main" class="main clearfix">
+
+                            <!-- Page content -->
+                            <div id="content" class="content content-main ">
+                                <header id="content-header" class="content-header">
+
+
+
+
+
+
+                                </header>
+
+                                <!-- Page content -->
+                                <div class="region region-content">
+
+                                    <div id="block-system-main" class="block-system-main block block-system block-even">
+                                        <!-- Block title -->
+
+                                        <!-- Block content -->
+                                        <div class="content block-content">
+                                            <div class="panel-flexible panels-flexible-12 clearfix">
+                                                <div class="panel-flexible-inside panels-flexible-12-inside">
+                                                    <div class="panels-flexible-row panels-flexible-row-12-6 panels-flexible-row-first clearfix Banner">
+                                                        <div class="inside panels-flexible-row-inside panels-flexible-row-12-6-inside panels-flexible-row-inside-first clearfix">
+                                                            <div class="panels-flexible-region panels-flexible-region-12-banner panels-flexible-region-first panels-flexible-region-last ">
+                                                                <div class="inside panels-flexible-region-inside panels-flexible-region-12-banner-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+                                                                    <div class="panel-pane pane-block pane-block-20 pane-block">
+
+
+
+                                                                        <div class="pane-content">
+                                                                            <p><a href="https://alittlehelp.org/groupprojects"><img alt="" src="sites/default/files/ditch-the-desk_Logo_SSBlue-2023_FNL-OTLN_0.png" style="height:99px; margin-left:8px; margin-right:8px; width:450px" />
+                                                                                <img alt="" src="sites/default/files/June 23 Otterbox NoCo2.jpg" style="float:right; height:301px; width:400px" /></a></p>
+                                                                            <h4>Get your team together to <strong>Ditch the Desk</strong>! Gather your group, pick a day/time, and reach out to get started.</h4>
+                                                                            <h4>We welcome teams from businesses, schools, faith-based organizations, and any other groups you might be a part of. <strong>Click <a href="https://alittlehelp.org/groupprojects"><span style="color:#0e6aab">here</span></a> for more.</strong></h4>
+                                                                            <h3 class="rteindent1"> </h3>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panels-flexible-row panels-flexible-row-12-5 panels-flexible-row-last clearfix ">
+                                                        <div class="inside panels-flexible-row-inside panels-flexible-row-12-5-inside panels-flexible-row-inside-last clearfix">
+                                                            <div class="panels-flexible-region panels-flexible-region-12-region_3 panels-flexible-region-first panels-flexible-region-last ">
+                                                                <div class="inside panels-flexible-region-inside panels-flexible-region-12-region_3-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+                                                                    <div class="panel-pane pane-block pane-block-11 pane-block">
+
+
+
+                                                                        <div class="pane-content">
+                                                                            <div class="alpha first grid-3 odd views-row"><img alt="" src="sites/default/files/Social1.jpg" style="float:left; height:133px; width:200px" />
+                                                                                <div class="btn"><a href="/ReceiveHelp">Older Adults Application</a></div>
+                                                                                <p> </p>
+                                                                                <p>Join A Little Help to participate in our programs and services, building connections with neighbors and saving thousands of dollars out of pocket.</p>
+                                                                            </div>
+                                                                            <div class="alpha even grid-3 second views-row"><img alt="" src="sites/default/files/Copy%20of%20Berthoud%20SS%202.jpg" style="height:121px; width:250px" />
+                                                                                <div class="btn"><a href="/volunteer-application">Volunteer Application</a></div>
+                                                                                <p> </p>
+                                                                                <p>Give A Little Help to your older neighbors. We need you to help foster a safe, inclusive community for all.</p>
+                                                                            </div>
+                                                                            <div class="alpha even grid-3 third views-row"><img alt="" src="sites/default/files/Copy%20of%20ALittleHelpServSat-53.jpg" style="float:left; height:126px; width:200px" />
+                                                                                <div class="btn"><a href="/donate">Donate</a></div>
+                                                                                <p> </p>
+                                                                                <p>A Little Help works hard coordinating services with our volunteers to provide a lifeline for the older adults in our communities.  If you are able to donate to A Little Help,
+                                                                                    it will make a difference. Thank you for helping us help others.</p>
+                                                                            </div>
+                                                                            <div class="alpha fourth grid-3 odd views-row"><img alt="" src="sites/default/files/Copy%20of%20cut.jpg" style="height:134px; width:240px" />
+                                                                                <div class="btn"><a href="/user">Already a Volunteer?</a></div>
+                                                                                <p> </p>
+                                                                                <p><a href="/user/login?current=portal/volunteer-opportunities">Sign in</a> on our HelpConnect Portal to view our member requests.</p>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Region Content bottom -->
+            </div>
+
+            <!-- Footer
+		======================================================================================= -->
+            <footer id="footer" class="footer page-footer" role="contentinfo">
+                <!-- Region Footer top -->
+
+                <div class="footer-wrap">
+                    <div class="container-12">
+                        <div class="grid-4">
+                            <div class="region region-footer-one">
+
+                                <div id="block-block-5" class="block-block-5 block block-block block-copyright block-odd">
+                                    <!-- Block title -->
+                                    <h2 class="title block-title">copyright</h2>
+
+                                    <!-- Block content -->
+                                    <div class="content block-content">
+                                        <div><span class="sitename">A Little Help</span> &copy; 2024 | <a href="/content/privacy-policy">Privacy Policy</a></div>
+                                        <div class="switcher">Desktop Version Only</div>
+                                    </div>
+                                </div>
+                                <div id="block-tm-follow-site" class="block-tm-follow-site block block-tm-follow block-even">
+                                    <!-- Block title -->
+
+                                    <!-- Block content -->
+                                    <div class="content block-content">
+                                        <div class='tm-follow-links clearfix site'><span class='tm-follow-link-wrapper tm-follow-link-wrapper-facebook without-label'><a href="https://www.facebook.com/alittlehelpCO/" class="tm-follow-link tm-follow-link-facebook tm-follow-link-site"></a>
+</span><span class='tm-follow-link-wrapper tm-follow-link-wrapper-instagram without-label'><a href="https://www.instagram.com/alittlehelpco/" class="tm-follow-link tm-follow-link-instagram tm-follow-link-site"></a>
+</span><span class='tm-follow-link-wrapper tm-follow-link-wrapper-youtube without-label'><a href="https://www.youtube.com/user/ALittleHelpCO" class="tm-follow-link tm-follow-link-youtube tm-follow-link-site"></a>
+</span><span class='tm-follow-link-wrapper tm-follow-link-wrapper-linkedin without-label'><a href="https://www.linkedin.com/company/alittlehelp" class="tm-follow-link tm-follow-link-linkedin tm-follow-link-site"></a>
+</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-4">
+                            <div class="region region-footer-two">
+
+                                <div id="block-block-8" class="block-block-8 block block-block block-odd">
+                                    <!-- Block title -->
+                                    <h2 class="title block-title">Quick Links</h2>
+
+                                    <!-- Block content -->
+                                    <div class="content block-content">
+                                        <p><a href="/application-volunteering">Volunteer</a></p>
+                                        <p><a href="/ReceiveHelp">Receive Services</a></p>
+                                        <p><a href="/donate">Donate</a></p>
+                                        <p><a href="/staff">Staff</a></p>
+                                        <p><a href="/board_of_directors">Board</a></p>
+                                        <p><a href="/annual-reports">Annual Reports</a></p>
+                                        <p><a href="/contactus">Contact Us</a></p>
+                                        <p><span style="color:#3498db"><span style="font-size:8px">A Little Help Anti-Discrimination Statement and Policy The officers, directors, committee members, employees, and persons served by this corporation shall be selected entirely on a nondiscriminatory basis with respect to age, gender, race, color, ethnicity, religion, national origin, military enrollment, veteran status, disability, sexual orientation, or gender expression. Diversity, at all levels, is a stated goal of the Corporation. (Article VI of Amended Bylaws of A Little Help adopted by the Board of Directors, 03/19/2009, amended 03/21/2020) </span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-4">
+                            <div class="region region-footer-three">
+
+                                <div id="block-block-13" class="block-block-13 block block-block block-even">
+                                    <!-- Block title -->
+                                    <h2 class="title block-title">Call our Offices</h2>
+
+                                    <!-- Block content -->
+                                    <div class="content block-content">
+                                        <p><strong>Administrative Office</strong></p>
+                                        <ul>
+                                            <li>2755 S. Locust Street, Suite 220</li>
+                                            <li>Denver, CO 80222</li>
+                                        </ul>
+                                        <p><strong>Email:</strong> <a href="mailto:office@alittlehelp.org">office@alittlehelp.org</a></p>
+                                        <p><strong>Metro Denver</strong>: 720-242-9032</p>
+                                        <p><strong>Western Slope:</strong> 970-404-1923</p>
+                                        <p><strong>Northern Colorado:</strong> 970-412-9396</p>
+                                        <p><img alt="" src="sites/default/files/bbblogo.png" style="float:left; height:69px; margin:5px; width:40px" /></p>
+                                        <h6><span style="color:#3498db"><span style="font-size:8px"><em>Better Business Bureau Accreditation A Little Help is pleased to be a Better Business Bureau (BBB) accredited organization. This accreditation involves a lengthy evaluation of 20 factors related to our governance, effectiveness, finances, and fundraising, and we have met BBB standards for each of these factors. You can review the evaluation in detail by clicking on the BBB logo beside this paragraph. Our Better Business Bureau accreditation means you can rely on our truthfulness, integrity, and effectiveness in our communications, operations, and services.</em></span></span>
+                                        </h6>
+                                        <p> </p>
+                                        <!--End mc_embed_signup-->
+                                        <!-- Begin Mailchimp Signup Form -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //<!--//--><![CDATA[//><!--
+        /**
+         * @file
+         *   Main JavaScript file for Dismiss module
+         */
+
+        (function($) {
+
+            Drupal.behaviors.dismiss = {
+                attach: function(context) {
+
+                    // Prepend the Dismiss button to each message box.
+                    $('.messages').each(function() {
+                        var flag = $(this).children().hasClass('dismiss');
+
+                        if (!flag) {
+                            $(this).prepend('<button class="dismiss"><span class="element-invisible">' + Drupal.t('Close this message.') + '</span></button>');
+                        }
+                    });
+
+                    // When the Dismiss button is clicked hide this set of messages.
+                    $('.dismiss').click(function() {
+                        $(this).parent().hide('fast');
+                    });
+
+                }
+            }
+
+        })(jQuery);
+
+        //--><!]]>
+    </script>
+    <script type="text/javascript" src="https://alittlehelp.org/sites/alittlehelp.org/modules/flexslider/assets/js/flexslider.load.js?sgshvu"></script>
+</body>
+
+</html>
