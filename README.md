@@ -1,8 +1,8 @@
 # CSCI3150_Final_Project
 
-## Team Member: Wangcong Xuan
+## Team Member: Wangcong Xuan, Sultan Alfoory
 
-## Recode Page: www.alittlehelp.org
+## Recode Page: https://alittlehelp.org/
 
 
 ## Recoded Components
